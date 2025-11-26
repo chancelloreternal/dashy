@@ -12,7 +12,8 @@ pageInfo:
 # Optional app settings and configuration
 appConfig:
   theme: colorful
-
+  enableEditMode: false
+  allowConfigEdit: false
 # Main content - An array of sections, each containing an array of items
 sections:
 - name: Getting Started
