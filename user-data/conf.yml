@@ -1,8 +1,8 @@
 ---
 # Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: The Citadel
+  description: Welcome to the Citadel!
   navLinks:
   - title: GitHub
     path: https://github.com/Lissy93/dashy
@@ -11,9 +11,28 @@ pageInfo:
 
 # Optional app settings and configuration
 appConfig:
-  theme: colorful
+  theme: custom
   enableEditMode: false
   allowConfigEdit: false
+  # Add this block below the appConfig section, align with appConfigz
+  customCss: |
+  :root {
+    /* White Marble Background */
+    --background: #f4ffec;
+    
+    /* Deep Royal Purple Text */
+    --text-main: #2e003e;
+    
+    /* Polished Silver Cards */
+    --item-background: #ffffff;
+    
+    /* Gold Accents/Borders */
+    --primary: #d4af37; 
+  }
+  .item-card {
+    border: 2px solid var(--primary);
+    border-radius: 2px;
+  }
 # Main content - An array of sections, each containing an array of items
 sections:
 - name: Getting Started
