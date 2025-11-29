@@ -14,11 +14,6 @@ appConfig:
   theme: custom
   enableEditMode: false
   allowConfigEdit: false
-  appConfig:
-  theme: custom # MUST be 'custom'
-  # ... other appConfig settings ...
-
-# NOTE: NO INDENTATION HERE
 customCss: | 
   /* This first line has 2 spaces of indentation */
   :root { 
