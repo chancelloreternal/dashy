@@ -15,25 +15,16 @@ appConfig:
   enableEditMode: false
   allowConfigEdit: false
 customCss: | 
-  /* This first line has 2 spaces of indentation */
   :root { 
     --background: #f4ffec; 
     --text-main: #2e003e; 
     --item-background: #ffffff;
     --primary: #d4af37; 
   }
-  /* This line also has 2 spaces */
   .item-card { 
     border: 2px solid var(--primary); 
     border-radius: 2px;
   }
-  /*
-    CRITICAL: The line immediately following this 
-    CSS must start a new YAML block (like 'sections:') 
-    and be un-indented or indented correctly.
-  */
-  # ... sections start here ...
-# Main content - An array of sections, each containing an array of items
 sections:
 - name: Getting Started
   icon: fas fa-rocket
