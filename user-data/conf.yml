@@ -16,14 +16,21 @@ appConfig:
   allowConfigEdit: false
 customCss: | 
   :root { 
-    --background: #f4ffec; 
-    --text-main: #2e003e; 
-    --item-background: #ffffff;
-    --primary: #d4af37; 
+    --text-main: #FFFFFF;
+    --primary: #d4af37;
+    --item-background: rgba(255, 255, 255, 0.1); 
+  }
+  body {
+    background-image: url('YOUR_PERMANENT_RAW_GITHUB_URL_HERE');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #1a0b2e;
   }
   .item-card { 
-    border: 2px solid var(--primary); 
-    border-radius: 2px;
+    border: 1px solid var(--primary);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
   }
 sections:
 - name: Getting Started
