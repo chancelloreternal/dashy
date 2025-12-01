@@ -21,7 +21,7 @@ customCss: |
     --item-background: rgba(255, 255, 255, 0.1); 
   }
   body {
-    background-image: url('YOUR_PERMANENT_RAW_GITHUB_URL_HERE');
+    background-image: https://github.com/chancelloreternal/dashy/blob/master/public/citadel_bg1.jpg;
     background-size: cover;
     background-attachment: fixed;
     background-color: #1a0b2e;
