@@ -22,7 +22,7 @@ customCss: |
     --item-background: rgba(255, 255, 255, 0.1); 
   }
   body {
-    background-color: #1a0b2e; /* CORRECT WAY to set solid color */
+    background-color: #32CD32; /* CORRECT WAY to set solid color */
   }
   .item-card { 
     border: 1px solid var(--primary);
