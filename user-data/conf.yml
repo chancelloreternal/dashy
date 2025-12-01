@@ -14,6 +14,7 @@ appConfig:
   theme: custom
   enableEditMode: false
   allowConfigEdit: false
+  basePath: '/dashy'
 customCss: | 
   :root { 
     --text-main: #FFFFFF;
