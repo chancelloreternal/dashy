@@ -15,24 +15,21 @@ appConfig:
   enableEditMode: false
   allowConfigEdit: false
   basePath: '/dashy'
-customCss: |
-    :root {
-      --text-main: #FFFFFF;
-      --primary: #d4af37;
-      --item-background: rgba(255, 255, 255, 0.1);
-    }
-    body {
-      background-image: url('https://raw.githubusercontent.com/chancelloreternal1/dashy/master/public/citadel_bg1.jpg');
-      background-size: cover;
-      background-attachment: fixed;
-      background-color: #1a0b2e;
-    }
-    .item-card {
-      border: 1px solid var(--primary);
-      backdrop-filter: blur(5px);
-      border-radius: 4px;
-      box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
-    }
+customCss: | 
+  :root { 
+    --text-main: #FFFFFF;
+    --primary: #d4af37;
+    --item-background: rgba(255, 255, 255, 0.1); 
+  }
+  body {
+    background-color: #1a0b2e; /* CORRECT WAY to set solid color */
+  }
+  .item-card { 
+    border: 1px solid var(--primary);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  }
 sections:
 - name: Getting Started
   icon: fas fa-rocket
