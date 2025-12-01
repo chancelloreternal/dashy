@@ -15,21 +15,25 @@ appConfig:
   enableEditMode: false
   allowConfigEdit: false
   basePath: '/dashy'
-customCss: | 
-  :root { 
-    --text-main: #FFFFFF;
-    --primary: #d4af37;
-    --item-background: rgba(255, 255, 255, 0.1); 
-  }
-  body {
-    background-color: #32CD32; /* CORRECT WAY to set solid color */
-  }
-  .item-card { 
-    border: 1px solid var(--primary);
-    backdrop-filter: blur(5px);
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
-  }
+  customCss: |
+    :root {
+      --text-main: #FFFFFF;
+      --primary: #d4af37;
+      --item-background: rgba(30, 10, 50, 0.8);
+      --background: #1a0a2e;
+    }
+    body {
+      background: linear-gradient(to bottom, #1a0a2e, #0d0520) !important;
+    }
+    .item-card {
+      background: linear-gradient(145deg, #2d1b4e, #1a0a2e) !important;
+      border: 2px solid #d4af37 !important;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3) !important;
+    }
+    .item-card:hover {
+      border-color: #ffd700 !important;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5) !important;
+    }
 sections:
 - name: Getting Started
   icon: fas fa-rocket
